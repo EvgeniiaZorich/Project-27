@@ -224,7 +224,7 @@ class ViewController: UIViewController {
     }
     
     func drawTwin() {
-        let imageWidth = 512
+        let imageWidth = 780
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: imageWidth, height: 512))
         let spacing = CGFloat((imageWidth - 128) / 4)
         let offset = CGFloat(64)
@@ -240,7 +240,7 @@ class ViewController: UIViewController {
     }
     
     func drawT(ctx: CGContext, positionX: CGFloat, positionY: CGFloat) {
-        let width = CGFloat(64)
+        let width = CGFloat(150)
         let height = CGFloat(128)
         ctx.setFillColor(UIColor.black.cgColor)
         ctx.translateBy(x: positionX, y: positionY)
@@ -256,7 +256,7 @@ class ViewController: UIViewController {
     
     func drawW(ctx: CGContext, positionX: CGFloat, positionY: CGFloat) {
         ctx.setFillColor(UIColor.black.cgColor)
-        let width = CGFloat(64/4)
+        let width = CGFloat(150/4)
         let height = CGFloat(128)
         ctx.translateBy(x: positionX, y: positionY)
         ctx.move(to: CGPoint(x: 0, y: 0))
@@ -286,7 +286,7 @@ class ViewController: UIViewController {
     
     func drawN(ctx: CGContext, positionX: CGFloat, positionY: CGFloat) {
         ctx.setFillColor(UIColor.black.cgColor)
-        let width = CGFloat(64)
+        let width = CGFloat(150)
         let height = CGFloat(128)
         ctx.translateBy(x: positionX, y: positionY)
         ctx.move(to: CGPoint(x: -width / 2, y: height))
